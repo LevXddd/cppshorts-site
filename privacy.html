@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy &mdash; CppShorts Autoposter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #131A2E;
+    --line: rgba(255,255,255,0.09);
+    --text: #ECEFF4;
+    --text-muted: #9AA3B8;
+    --accent: #F2A33D;
+  }
+  *{ box-sizing: border-box; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.65;
+    padding: 6vh 6vw 10vh;
+  }
+  .wrap{ max-width: 640px; margin: 0 auto; }
+  a.back{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--accent);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    margin: 0 0 0.5rem;
+  }
+  .meta{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 0 0 2.5rem;
+  }
+  h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin: 0 0 0.6rem;
+  }
+  section{ padding: 1.5rem 0; border-top: 1px solid var(--line); }
+  p{ margin: 0 0 0.9rem; color: var(--text-muted); max-width: 38em; }
+  p:last-child{ margin-bottom: 0; }
+  ul{ margin: 0 0 0.9rem; padding-left: 1.1rem; color: var(--text-muted); max-width: 38em; }
+  li{ margin-bottom: 0.4rem; }
+  strong{ color: var(--text); font-weight: 500; }
+  footer{
+    margin-top: 2.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--line);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+  footer a{ color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">&larr; CppShorts Autoposter</a>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated September 2026</p>
+
+    <section>
+      <h2>1. Overview</h2>
+      <p>
+        CppShorts Autoposter is a personal tool operated by a single
+        developer, connected to a single TikTok account that the developer
+        owns. This policy explains the only data the tool touches.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Information accessed</h2>
+      <p>Through TikTok's standard sign-in (OAuth), the tool receives:</p>
+      <ul>
+        <li>Basic profile identifiers for the one connected account (open ID, display name)</li>
+        <li>An access token and refresh token scoped only to that account</li>
+      </ul>
+      <p>
+        No information is accessed about any other TikTok user, and the
+        tool never requests access to any account beyond the developer's
+        own.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. How it's used</h2>
+      <p>
+        The access token is used only to authenticate requests to TikTok's
+        Content Posting API, so the connected account's own videos can be
+        published. Nothing collected is used for advertising, analytics,
+        or any purpose beyond publishing.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Storage and sharing</h2>
+      <p>
+        Tokens are stored securely by the developer and are never shared,
+        sold, or disclosed to any third party.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Retention and revocation</h2>
+      <p>
+        Tokens are kept only for as long as the tool is in active use.
+        Disconnecting the app from TikTok's <strong>Manage apps</strong>
+        settings immediately revokes them.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Children's privacy</h2>
+      <p>
+        This tool is not directed at children and does not knowingly
+        collect information from anyone under 13.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Changes to this policy</h2>
+      <p>
+        This page may be updated occasionally. Changes take effect as soon
+        as they're posted here.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Contact</h2>
+      <p>
+        Questions about this policy can be sent to
+        <strong>your-email@example.com</strong>.
+      </p>
+    </section>
+
+    <footer>
+      <a href="index.html">&larr; Back home</a>
+      &nbsp;&middot;&nbsp;
+      <a href="terms.html">Terms of Service</a>
+    </footer>
+  </div>
+</body>
+</html>

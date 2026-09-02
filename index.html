@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CppShorts Autoposter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #131A2E;
+    --bg-raised: #1B2440;
+    --line: rgba(255,255,255,0.09);
+    --text: #ECEFF4;
+    --text-muted: #9AA3B8;
+    --accent: #F2A33D;
+  }
+  *{ box-sizing: border-box; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    padding: 6vh 6vw 10vh;
+  }
+  .wrap{ max-width: 640px; margin: 0 auto; }
+  .prompt{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--accent);
+    letter-spacing: 0.01em;
+    margin: 0 0 1.75rem;
+  }
+  h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    line-height: 1.15;
+    margin: 0 0 1rem;
+  }
+  .lede{
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin: 0 0 3rem;
+    max-width: 34em;
+  }
+  h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin: 0 0 0.75rem;
+  }
+  section{
+    padding: 1.75rem 0;
+    border-top: 1px solid var(--line);
+  }
+  p{ margin: 0; color: var(--text-muted); max-width: 36em; }
+  .icon{
+    width: 56px; height: 56px;
+    border-radius: 14px;
+    background: var(--bg-raised);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  footer{
+    margin-top: 3rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--line);
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  footer a{
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1px;
+  }
+  footer a:hover{ color: var(--accent); }
+  .meta{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="icon">&lt;/&gt;</div>
+    <p class="prompt">$ ./cppshorts-autoposter</p>
+    <h1>A small tool that posts my own C++ shorts to TikTok</h1>
+    <p class="lede">
+      CppShorts Autoposter connects one TikTok account &mdash; mine &mdash;
+      to TikTok's official Content Posting API, so videos from my existing
+      C++ tutorial pipeline can go up without a manual export-and-upload
+      step each time.
+    </p>
+
+    <section>
+      <h2>What it does</h2>
+      <p>
+        Videos are produced ahead of time by a pipeline I already run for
+        my YouTube Shorts channel. This tool authorizes access to a single
+        TikTok account through TikTok's standard sign-in flow, then
+        publishes each finished video to that account.
+      </p>
+    </section>
+
+    <section>
+      <h2>Who it's for</h2>
+      <p>
+        Just me. This isn't a public product, a service for other
+        creators, or something you can sign up for &mdash; it's a personal
+        automation script for one account.
+      </p>
+    </section>
+
+    <footer>
+      <div style="width:100%">
+        <a href="terms.html">Terms of Service</a>
+        <span style="margin: 0 0.75rem; color: var(--text-muted)">&middot;</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <div class="meta">Last updated September 2026</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
